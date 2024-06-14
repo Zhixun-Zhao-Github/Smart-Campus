@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Authority Management",
+    "code": "Auth",
+    "children": [
+      {
+        "name": "User Management",
+        "code": "User",
+        "buttons": [
+          {
+            "name": "Add",
+            "code": "User.btn.add"
+          },
+          {
+            "name": "Delete",
+            "code": "User.btn.remove"
+          },
+          {
+            "name": "Assign Roles",
+            "code": "User.btn.assgin"
+          }
+        ]
+      },
+      {
+        "name": "Role Management",
+        "path": "role/list",
+        "code": "Role",
+        "buttons": [
+          {
+            "name": "Delete",
+            "code": "Role.btn.remove"
+          },
+          {
+            "name": "Assign Permissions",
+            "code": "Role.btn.assgin", 
+            "toCode": "RoleAuth"
+          }
+        ]
+      },
+      {
+        "name": "Menu Management",
+        "path": "code/list",
+        "code": "code", 
+        "buttons": [
+          {
+            "name": "Add",
+            "code": "code.btn.add"
+          },
+          {
+            "name": "Modify",
+            "code": "code.btn.update"
+          },
+          {
+            "name": "Delete",
+            "code": "code.btn.remove"
+          }
+        ]
+      }
+    ]
+  }
+]
